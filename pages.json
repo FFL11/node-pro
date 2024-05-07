@@ -1,0 +1,123 @@
+{
+	"easycom": {
+			"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+		},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "商城模板",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#000000"
+			}
+		}
+	    ,{
+            "path" : "pages/cation/cation",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/cart/cart",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "商城模板",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/pageitem/ProductYm/ProductYm",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "商品详情",
+                "enablePullDownRefresh": false,
+				"navigationBarTextStyle": "black"
+				
+            }
+            
+        }
+        ,{
+            "path" : "pages/pageitem/order/order",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/pageitem/userReg/userReg",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/pageitem/userLogin/userLogin",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"tabBar": {
+	          "color":"#000",   // 文本颜色
+	          "selectedColor":"#ff0000",   // 点击之后的颜色
+	          "borderStyle":"black",  // 黑白两色
+	          "list": [    // 列表
+	            {
+	              // 首页
+	              "pagePath": "pages/index/index",    // 位置url
+	              "text":"首页",    // 文本内容
+	              "iconPath": "/static/home.png",   // 没有激活之前的图标
+	              "selectedIconPath": "/static/home-selected.png"   // 激活之后的图标
+	            },
+				{
+				  //分类
+				  "pagePath": "pages/cation/cation",    // 位置url
+				  "text":"分类",    // 文本内容
+				  "iconPath": "/static/category.png",   // 没有激活之前的图标
+				  "selectedIconPath": "/static/category-selected.png"   // 激活之后的图标
+				},
+				{
+				  // 购物车
+				  "pagePath": "pages/cart/cart",    // 位置url
+				  "text":"购物车",    // 文本内容
+				  "iconPath": "/static/cart.png",   // 没有激活之前的图标
+				  "selectedIconPath": "/static/cart-selected.png"   // 激活之后的图标
+				},
+				{
+				  // 我的
+				  "pagePath": "pages/my/my",    // 位置url
+				  "text":"我的",    // 文本内容
+				  "iconPath": "/static/user.png",   // 没有激活之前的图标
+				  "selectedIconPath": "/static/user-selected.png"   // 激活之后的图标
+				}
+			
+	          ]
+	        },
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#fff",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}
